@@ -1,0 +1,13 @@
+replicaCount: 2
+
+image:
+  repository: course-service
+  tag: v1
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 3003
+  nodePort: 30007
+
+containerPort: 3003
